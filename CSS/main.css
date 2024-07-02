@@ -51,6 +51,99 @@ body {
   clear: both;
 }
 /* 모달창 */
+.modal-wrap{
+  position: fixed ;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999999;
+}
+.modal-main{
+  background-color: #fff;
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 150px;
+  border-radius: 30px;
+  /* line-height: 2;
+  font-weight: 500;
+  border-radius: 10%;
+  font-size: 18px; */
+}
+/* 선생님이 따라만들기 */
+.modal-logo{
+  display: block;
+  position: absolute;
+  top:-50px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 130px;
+  height: 130px;
+  background: url("../Images/chat-btn.png")no-repeat center #dbf4c7;
+  border-radius: 50%;
+  border: 6px solid#ffff;
+}
+.modal-notice{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2;
+}
+.modal-notice strong{
+  color:red;
+  background: linear-gradient(to top , yellow 50% , transparent 50%);
+}
+.modal-notice span{
+  font-size: 16px;
+  font-weight: 300;
+}
+.modal-close{
+  background-color: #d8d8d8;
+  padding: 15px;
+  border-radius: 0 0 30px 30px;
+  cursor: pointer;
+}
+
+/* .modal-main::before{
+  content: "";
+  background: url("../Images/chat-btn.png")no-repeat;
+  width: 90px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  top:-10%;
+  left: 50%;
+  transform: translate(-50%);
+  margin: auto;
+}
+.modal-notice{
+  padding: 155px 60px;
+}
+.modal-notice strong{
+  color: #ed1c24;
+  background-color: yellow;
+}
+.modal-notice span{
+  font-size: 13px;
+  color: #58595b;
+}
+.modal-close {
+  width: 600px;
+  display: block;
+  background-color:#c3c3ce;
+  height: 50px;
+  font-size: 15px;
+  padding:10px 0;
+  border-radius: 0 0 100px 100px;
+} */
 /* top버튼 */
 .top-button{
   position: fixed;
